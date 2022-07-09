@@ -1,10 +1,3 @@
-# Algorithm:
-# Declare to arrays of letters, one lower case and one upper case
-# Merge those 2 arrays in a full array
-# Translate letters from the passed string to index position in full array ans store that in the index_array
-# Iterate through index_position array check if index bigger than 25, if true than substract 26 before translating and pick Upper Case
-# Otherwise just pick lower case to translate
-
 
 def caesar_cipher(string, number)
   lower_array = ("a".."z").to_a
@@ -25,13 +18,8 @@ def caesar_cipher(string, number)
     end
   end
   coded_string = coded_array.join
+  coded_string
 end
 
-p caesar_cipher("What A Feeling!", 2)
-p caesar_cipher("ABC ! Andrea ? hekla8397.z", 3)
-p caesar_cipher("Andrea is hot!", 5)
-
-p caesar_cipher("ABCDeZ", 1)
-p caesar_cipher("aBcDeFz", 1)
 p caesar_cipher("What a string!", 5)
 
